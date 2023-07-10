@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-color: #333842;
+  justify-content: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +40,179 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.movie-container{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  background-color: white;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto;
+}
+
+.movie-details {
+  padding: 15px;
+}
+
+.movie-name {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.movie-actor {
+  margin: 0 0 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+.movie-synopsis {
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+.nav-container {
+  min-height: 8vh;
+  background-color: rgb(33, 37, 41);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+
+
+.nav-container a {
+  margin-top: 0px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-container a:hover {
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container .hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); /* Black background with opacity */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+}
+
+.review-stars img{
+  height: 25px;
+}
+
+.review-stars button{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.form-container{
+  border: 1px solid rgb(172, 160, 160);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Aligns items horizontally in the middle */
+  text-align: center; /* Centers text */
+}
+
+.form-container button{
+  width: 50%;
+  height: 25px;
+  background-color: rgb(23, 92, 221);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+
+
+textarea {
+  margin-top: 10px;
+  height: 100px;
+  width: 80%;
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 80%;
+  max-width: 80%;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.review-name {
+  width: 75%;
+  margin-top: 10px;
+  height:20px;
+  border: 1px solid rgb(143, 143, 143);
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.review-name{
+  margin-top: 10px;
+}
+
+.review-container{
+  background-color: none;
+  margin:10px;
+  border-radius: 4px;
+}
+
+.reviewer-header{
+padding-top: 15px;
+}
+
+.review-post{
+  background-color: rgb(216, 216, 216);
+  border: 1px solid rgb(148, 148, 148);
+  padding-bottom: 10px;
+  border-radius: 8px;
 }
