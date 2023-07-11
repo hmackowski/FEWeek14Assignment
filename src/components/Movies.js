@@ -2,7 +2,7 @@ import React from "react";
 import ReviewForm from "./ReviewForm";
 import ReviewStars from "./ReviewStars"
 
-function Movies({movie, addReview, movieIndex}) {
+function Movies({movie, addReview}) {
   return (
     <div className="movie-card">
       <div className="image-container">
@@ -13,7 +13,9 @@ function Movies({movie, addReview, movieIndex}) {
       <ReviewStars />
       <p>Starring:</p>
       <h3 className="movie-actor">{movie.actor}</h3>
-      <ReviewForm addReview={(review) => addReview(movieIndex, review)}/>
+      <ReviewForm addReview={(review) => addReview(review)} />
+      
+
     </div>
   );
 }

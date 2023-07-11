@@ -13,16 +13,17 @@ function ReviewStars() {
         <button
           key={`button-${i}`}
           className={`button-${i}`}
+          id={'star-Buttons'}
           onClick={() => {
             setClickedStar(i);
           }}
           onMouseEnter={() => {
             setHoverStar(i);
-            console.log(`Mouse entered star ${i}`);
+            // console.log(`Mouse entered star ${i}`);
           }}
           onMouseLeave={() => {
             setHoverStar(0);
-            console.log(`Mouse left star ${i}`);
+            // console.log(`Mouse left star ${i}`);
           }}
         >
           <img
