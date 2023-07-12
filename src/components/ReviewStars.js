@@ -7,15 +7,20 @@ function ReviewStars() {
   const [clickedStar, setClickedStar] = React.useState(0);
 
   const generateStars = () => {
+    let count = 0;
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       stars.push(
         <button
           key={`button-${i}`}
           className={`button-${i}`}
-          id={'star-Buttons'}
+          id={"star-Buttons"}
           onClick={() => {
             setClickedStar(i);
+            count = i;
+            {
+              console.log(count);
+            }
           }}
           onMouseEnter={() => {
             setHoverStar(i);

@@ -5,7 +5,7 @@ import emptyStar from "../images/empty-star.png";
 function RatedStars(props) {
   let starRating = props.stars;
   let stars = [];
-  
+
   for (let i = 0; i < 5; i++) {
     stars.push(
       <img
