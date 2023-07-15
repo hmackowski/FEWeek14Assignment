@@ -2,7 +2,7 @@
 
 The Movie Review App is a web application built with React that allows users read and write reviews, and rate their favorite films. It provides a user-friendly interface for managing movie reviews and helps users discover new movies based on other users' recommendations.
 
-![Movie Review App Screenshot](app-screenshot.png)
+![Movie Review App Screenshot](src/images/app-screenshot.jpg)
 
 ## Features
 
