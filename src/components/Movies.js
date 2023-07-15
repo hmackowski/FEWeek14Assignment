@@ -10,7 +10,7 @@ function Movies({ movie, addReview }) {
         <div className="hover-text">{movie.synopsis}</div>
       </div>
       <h2 className="movie-name">{movie.name}</h2>
-      <ReviewStars />
+      {/* <ReviewStars /> */}
       <p>Starring:</p>
       <h3 className="movie-actor">{movie.actor}</h3>
       <ReviewForm addReview={(review) => addReview(review)} />
