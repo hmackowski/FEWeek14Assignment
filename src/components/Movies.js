@@ -1,6 +1,6 @@
 import React from "react";
 import ReviewForm from "./ReviewForm";
-import ReviewStars from "./ReviewStars";
+// import ReviewStars from "./ReviewStars";
 
 function Movies({ movie, addReview }) {
   return (
